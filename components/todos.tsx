@@ -41,13 +41,11 @@ const Todo: FC<TodoProps> = ({ todo }) => {
           const isComplete = formData.get("isComplete") === "on"
 
           toggleOptimisticTodo({
-            ...optimisticTodo,
-            is_completed: isComplete
+            ...optimisticTodo
           })
 
           await toggleTodoCompletion({
-            todoId: todo.id,
-            isComplete: isComplete
+            todoId: todo.id
           })
         }}
       >
