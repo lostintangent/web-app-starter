@@ -65,9 +65,7 @@ export default async function LoginPage({
 
       <div className="mt-8 flex flex-col space-y-3">
         <Button
-          className="bg-blue-600 text-white hover:bg-blue-500"
-          formAction={login}
-        >
+          className="bg-blue-600 text-white hover:bg-blue-500">
           Login
         </Button>
         <Button formAction={signup}>Sign Up</Button>
